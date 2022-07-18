@@ -1,0 +1,6 @@
+# Environment variable
+.venv
+
+#Cache created 
+/__pycache__
+
