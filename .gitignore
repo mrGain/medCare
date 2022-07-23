@@ -2,5 +2,5 @@
 .venv
 
 #Cache created 
-/__pycache__
+__pycache__/
 

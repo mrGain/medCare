@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="bookings" id="bookings">
+    <h1 class="heading">Book <span>Appointment</span></h1>
+    <div class="booking-form">
+       
+        <form action="" method="POST">
+            {% csrf_token %}
+            <h3>Book Appoinment Now</h3>
+            <div class="form-group">
+                <input name="name" type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input name="phone" type="text" class="form-control" id="phone" placeholder="Enter your phone">
+            </div>
+            <div class="form-group">
+                <input name="date" type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+                <!-- <label for="time">Time</label> -->
+                <input name="time" type="time" class="form-control" id="time"min="09:00" max="18:00" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Any Message here</label>
+                <textarea name="message" id="" cols="30" rows="5" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+
+        <div class="image">
+            <img src="{% static 'image/book-img.svg' %}" alt="">
+        </div>
+    </div>
+</section>
+{% endblock content %}

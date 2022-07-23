@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- About section start here  -->
+<section class="about" id="about">
+    <h1 class="heading">About <span>Us</span></h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'image/about-img.svg' %}" alt="">
+        </div>
+
+        <div class="content">
+            <h3>We take care of your health and life</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam architecto asperiores, perspiciatis natus aperiam nostrum, ipsam amet veniam, rem tempore animi. Perferendis, quibusdam? Aperiam rem aut laudantium, ipsum non, voluptatem distinctio minus in sed, quidem modi excepturi asperiores? Sapiente, necessitatibus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus dicta ut facilis expedita quo consectetur odio magnam, corporis rem.</p>
+            <a href="" class="btn" >learnmore <span class="fas fa-chevron-right" ></span></a>
+        </div>
+    </div>
+</section>
+<!-- About section ends here  -->
+
+<!-- Review aection start here  -->
+<section class="review" id="review">
+    <h1 class="heading">client's <span>review</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'image/pic-1.png' %}" alt="">
+            <h3>John deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam inventore minima repellendus laudantium cum, sed fuga vitae totam error debitis unde, rerum blanditiis numquam dolorum porro possimus eligendi veniam eos!
+            </p>
+        </div>
+        <div class="box">
+            <img src="{% static 'image/pic-2.png' %}" alt="">
+            <h3>Sagarika </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam inventore minima repellendus laudantium cum, sed fuga vitae totam error debitis unde, rerum blanditiis numquam dolorum porro possimus eligendi veniam eos!
+            </p>
+        </div>
+        <div class="box">
+            <img src="{% static 'image/pic-3.png' %}" alt="">
+            <h3>Rakesh Gain</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam inventore minima repellendus laudantium cum, sed fuga vitae totam error debitis unde, rerum blanditiis numquam dolorum porro possimus eligendi veniam eos!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Blog section starts here  -->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading" ><span>Our</span> blogs</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="images">
+
+                <img src="{% static 'image/blog-1.jpg' %}" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href=""><i class="fas fa-calender" ></i>21 Jul, 2022</a>
+                    <a href=""><i class="fas fa-user" ></i>by admin</a>
+                </div>
+                <h3>blog titel goes here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corrupti perspiciatis dolore doloremque nostrum inventore culpa dolorum voluptatibus sint sunt.</p>
+                <a href="" class="btn">learn more <span class="fas fa-chevron-right" ></span></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="images">
+                
+                <img src="{% static 'image/blog-2.jpg'%}" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href=""><i class="fas fa-calender" ></i>21 Jul, 2022</a>
+                    <a href=""><i class="fas fa-user" ></i>by admin</a>
+                </div>
+                <h3>blog titel goes here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corrupti perspiciatis dolore doloremque nostrum inventore culpa dolorum voluptatibus sint sunt.</p>
+                <a href="" class="btn">learn more <span class="fas fa-chevron-right" ></span></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="images">
+                
+                <img src="{% static 'image/blog-3.jpg' %}" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href=""><i class="fas fa-calender" ></i>21 Jul, 2022</a>
+                    <a href=""><i class="fas fa-user" ></i>by admin</a>
+                </div>
+                <h3>blog titel goes here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corrupti perspiciatis dolore doloremque nostrum inventore culpa dolorum voluptatibus sint sunt.</p>
+                <a href="" class="btn">learn more <span class="fas fa-chevron-right" ></span></a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- Blog section ends here  -->
+{% endblock content %}
